@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+h1 {
+  color: white;
+  background-color: #c295d8;
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  padding: 15px;
+  font-size: 40px;
+  justify-content: space-around;
+  width: auto;
+  animation-name: backgroundColor;
+  animation-duration: 10s;
+  padding-top: 100px;
+}
+
+@keyframes backgroundColor {
+ from {background-color: purple;}
+ to {background-color: #c295d8;}
+}
+
+p {
+  font-family: 'Cedarville Cursive', cursive;
+  line-height: 1.5;
+  background: purple;
+  color: white;
+  padding: 50px;
+  text-align: center;
+  margin: 50px;
+
+
+}
+
+
+h2 {
+  color: white;
+  background-color: #c295d8;
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  padding: 25px;
+  font-size: 40px;
+  justify-content: space-around;
+  width: auto;
+  animation-name: backgroundColor;
+  animation-duration: 10s;
+}
+
+
+
+
+img:hover {
+   -webkit-filter: none;
+   -moz-filter: none;
+   -ms-filter: none;
+   filter: none;
+}
+
+img {
+  height: 300px;
+  width: auto;
+  margin: 5px;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+ -webkit-filter: grayscale(100%);
+ -moz-filter: grayscale(100%);
+ -ms-filter: grayscale(100%);
+ filter: grayscale(100%);
+ filter: gray; /* IE 6-9 */
+}
+
+.all-images {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px;
+
+}
+
+
+
+
+
+
+
+
+body {
+  /* The image used */
+  background-image: url("./images/flowers.jpg");
+  bacground-repeat: repeat;
+}
